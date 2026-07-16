@@ -46,9 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function renderTags() {
 
-            // This resets -> DO NOT REMOVE
-            tagContents.innerHTML = "";
-            // tagContents.querySelectorAll(".tag").forEach(tag => tag.remove());
+            // This resets the tags without clearning the text -> DO NOT REMOVE
+            tagContents.querySelectorAll(".tag").forEach(tag => tag.remove());
+
+            if(tags.length === 0) {
+
+                // There is no style added to this container -> "" = default to what the original style was.
+                tagBoxText.style.display = "";
+                return;
+            }
+            
+            tagBoxText.style.display = "none";
 
             tags.forEach((tag, index) => {
 
