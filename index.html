@@ -1,184 +1,94 @@
 <html lang="en">
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A&L Wedding</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A&L Wedding</title>
 
-    <link rel="stylesheet" href="Styling.css">
-    <script src="behaviour.js"></script>
+        <link rel="stylesheet" href="Styling.css">
+        <script src="behaviour.js"></script>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div class="HeroHeading">
-        <h1>LAURA & ALESSANDRO</h1>
-        <p> 24 March 2027</p>
-    </div>
-
-    <nav>
-        <ul>
-            <li>Welcome</li>
-            <li>RSVP</li>
-            <li>Story</li>
-            <li>Travel</li>
-            <li>Accommodation</li>
-            <li>Q&A</li>
-        </ul>
-    </nav>
-
-    <section alt="Welcome">
-
-        <div>
-            <h1>You are Invited to Laura and Alessandro's Wedding Day Celebarations</h1>
-            <p> Join us for our day in celebrating our wedding</p>
-        </div>
-
-    </section>
-
-    <section alt="RSVP">
-
-        <div class="formStyling"> 
-
-            <h1>RSVP?</h1>
-
-            <form name="RSVP">
-
-                <!-- NOTE* -> Label 'for' attribute links to the input 'ID'-> Whereas the name for the input connects to the google sheet name convention-->
-
-                <div class="textInput">
-                    <label for="fName">First Name</label>
-                    <input type="text" class="textField" name="fName" id="fName" value="" placeholder="Enter First Name">
-                </div>
-
-                <div class="textInput">
-                    <label for="lName">Last Name</label>
-                    <input type="text" class="textField" name="lName" id="Lname" value="" placeholder="Enter Last Name">
-                </div>
-
-                <div class="textInput">
-                    <label for="RSVP">RSVP</label>
-                    <div class="radioCheckboxInput">
-                        <input type="radio" class="radioField" name="RSVP" id="RSVP" value="WILL BE ATTENDING"> <label for="html">See You There!</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="radio" class="radioField" name="RSVP" id="RSVP" value="CANNOT ATTEND"> <label for="html">Can't Make It</label> 
-                    </div>
-                </div>
-
-                <div class="textInput" id="dietaryRequirements">
-                    <div class="labelCustom">
-                        <label for="foodPreferences"> Dietary Requirements</label>
-                        <p>Preferences do not require the chef to cook in another station.</p>
-                    </div>
-                    
-
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="foodPreferences" value="Vegetarian"> <label for="html">Vegetarian</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="foodPreferences" value="Pescatarian"> <label for="html">Pescatarian</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="foodPreferences" value="Vegan"> <label for="html">Vegan</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="foodPreferences" value="fussy"> <label for="html">Fussy Eater</label>
-                    </div>
-                    
-                    <!-- HERE IS A CUSTOM INPUT -> THERE IS 2 TYPES -> 'tagContents' is just to display the tags (visual) -> hiddenTagContents is for the table-->
-                    <div class="textInput">
-                        <div class="inputWButton">
-                            <input type="text" class="textField tagInput" placeholder="Enter other options"> <button type="button" class="ADD">Add</button>
-                        </div>
-                        <div class="tagContents"> <p class="tagBoxText"> No Dietary Requirements Added</p></div>
-                        <input type="hidden" name="otherFoodPreferences" class="hiddenTagContents">
-                    </div>
-                        
-                    
-                </div>
-
-                <div class="textInput" id="allergies">
-                    <div class="labelCustom">
-                        <label for="allergies">Allergies</label>
-                        <p>Allergies will require the chef to cook in another station.</p>
-                    </div>
-                    
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="allergies" value="Eggs"> <label for="html">Eggs</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="allergies" value="Dairy"> <label for="html">Dairy</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                    <input type="checkbox" class="radioField" name="allergies" value="Peanuts"> <label for="html">Peanuts</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="allergies" value="TreeNuts"> <label for="html">Tree Nuts</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="allergies" value="Gluten"> <label for="html">Gluten</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="allergies" value="Fish"> <label for="html">Fish</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="allergies" value="ShellFish"> <label for="html">Shell Fish</label>
-                    </div>
-                    <div class="radioCheckboxInput">
-                        <input type="checkbox" class="radioField" name="allergies" value="Sesame"> <label for="html">Sesame</label>
-                    </div>
-
-                    <!-- HERE IS A CUSTOM INPUT -> THERE IS 2 TYPES -> 'tagContents' is just to display the tags (visual) -> hiddenTagContents is for the table-->
-                    <div class="textInput">
-                        <div class="inputWButton">
-                            <input type="text" class="textField tagInput" placeholder="Enter other options"> <button type="button" class="ADD">Add</button>
-                        </div>
-                        <div class="tagContents"> <p class="tagBoxText">No Allergies Added </p></div>
-                        <input type="hidden" name="otherAllergies" class="hiddenTagContents">
-                    </div>
-                    
-                </div>
-
-                <div class="textInput">
-                    <label for="comments">Any Comments</label>
-                    <textarea type="textarea" class="textField" name="comments" value="" placeholder="Anything else you wanted to mention?"></textarea>
-                </div>
-
-                <input type="submit" value="Submit">
-
-
-            </form>
-
-        </div>
+        <div class="header"></div>
+        
+        <div class="navbar"></div>   
 
         
 
+        <section class="vh ColumnFlex justifyContent" 
+            style="background-image: url('Images/Scene/20260710_073936.jpg');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;" 
+            alt="Welcome">
 
-    </section>
+            <div class="ColumnFlex gapV1 bgHeading">
+                <h1>You are Invited to Laura and Alessandro's Wedding Day Celebarations</h1>
+                <p> Join us for our day in celebrating our wedding</p>
+                <div class="underline"></div>
+            </div>
 
-    <section alt="Story">
-
-
-    </section>
-
-    <section alt="Schedule">
-
-
-    </section>
-
-    <section alt="Travel">
-
-
-    </section>
-
-    <section alt="Q&A">
+        </section>
 
 
-    </section>
 
-    
-    
-</body>
+        <section alt="Story">
+
+            <div class="columnFlex">
+
+                <div class="ColumnFlex gapV1"> 
+                    <h1>So How Did It All Begin?</h1>
+                    <p>Well that is a long story</p>
+                    <div class="underline"></div>
+                </div>
+                
+
+                <div class="rowFlex flexWrap alignContents">
+
+                    <img src="Images/People/signal-2025-11-01-08-43-46-667.jpg" alt="Alessandro and Laura" style="height: 400px;">
+                    <div class="columnFlex" style="width: 40%;">
+                        <h2>Our First Encounter</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                            in culpa qui officia deserunt mollit anim id est laborum.
+                            <br> <br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                            in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+
+        </section>
+
+        <section alt="Schedule">
+
+
+        </section>
+
+        <section alt="Travel">
+
+
+        </section>
+
+        <section alt="Q&A">
+
+
+        </section>
+
+        
+        
+    </body>
 </html>

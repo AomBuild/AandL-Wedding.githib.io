@@ -1,0 +1,151 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A&L Wedding | RSVP</title>
+
+
+        <link rel="stylesheet" href="Styling.css">
+        <script src="behaviour.js"></script>
+        <script src="rsvp.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="header"></div>
+        
+        <div class="navbar"></div>   
+
+        <section class="vh ColumnFlex justifyContent" alt="Welcome">
+
+            <div class="ColumnFlex gapV1">
+                <h1>RSVP?</h1>
+                <p>Want to make it official? fill in the form so we know you're comming along for the ride?</p>
+                <div class="underline"></div>
+            </div>
+
+        </section>
+
+
+        <section alt="RSVP">
+
+            <div class="formStyling"> 
+
+                <form name="RSVP">
+
+                    <!-- NOTE* -> Label 'for' attribute links to the input 'ID'-> Whereas the name for the input connects to the google sheet name convention-->
+
+                    <div class="textInput">
+                        <label for="fName">First Name</label>
+                        <input type="text" class="textField" name="fName" id="fName" value="" placeholder="Enter First Name">
+                    </div>
+
+                    <div class="textInput">
+                        <label for="lName">Last Name</label>
+                        <input type="text" class="textField" name="lName" id="Lname" value="" placeholder="Enter Last Name">
+                    </div>
+
+                    <div class="textInput">
+                        <label for="RSVP">RSVP</label>
+                        <div class="radioCheckboxInput">
+                            <input type="radio" class="radioField" name="RSVP" id="RSVP" value="WILL BE ATTENDING"> <label for="html">See You There!</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="radio" class="radioField" name="RSVP" id="RSVP" value="CANNOT ATTEND"> <label for="html">Can't Make It</label> 
+                        </div>
+                    </div>
+
+                    <div class="textInput" id="dietaryRequirements">
+                        <div class="labelCustom">
+                            <label for="foodPreferences"> Dietary Requirements</label>
+                            <p>Preferences do not require the chef to cook in another station.</p>
+                        </div>
+                        
+
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="foodPreferences" value="Vegetarian"> <label for="html">Vegetarian</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="foodPreferences" value="Pescatarian"> <label for="html">Pescatarian</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="foodPreferences" value="Vegan"> <label for="html">Vegan</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="foodPreferences" value="fussy"> <label for="html">Fussy Eater</label>
+                        </div>
+                        
+                        <!-- HERE IS A CUSTOM INPUT -> THERE IS 2 TYPES -> 'tagContents' is just to display the tags (visual) -> hiddenTagContents is for the table-->
+                        <div class="textInput">
+                            <div class="inputWButton">
+                                <input type="text" class="textField tagInput" placeholder="Enter other options"> <button type="button" class="ADD">Add</button>
+                            </div>
+                            <div class="tagContents"> <p class="tagBoxText"> No Dietary Requirements Added</p></div>
+                            <input type="hidden" name="otherFoodPreferences" class="hiddenTagContents">
+                        </div>
+                            
+                        
+                    </div>
+
+                    <div class="textInput" id="allergies">
+                        <div class="labelCustom">
+                            <label for="allergies">Allergies</label>
+                            <p>Allergies will require the chef to cook in another station.</p>
+                        </div>
+                        
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="allergies" value="Eggs"> <label for="html">Eggs</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="allergies" value="Dairy"> <label for="html">Dairy</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                        <input type="checkbox" class="radioField" name="allergies" value="Peanuts"> <label for="html">Peanuts</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="allergies" value="TreeNuts"> <label for="html">Tree Nuts</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="allergies" value="Gluten"> <label for="html">Gluten</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="allergies" value="Fish"> <label for="html">Fish</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="allergies" value="ShellFish"> <label for="html">Shell Fish</label>
+                        </div>
+                        <div class="radioCheckboxInput">
+                            <input type="checkbox" class="radioField" name="allergies" value="Sesame"> <label for="html">Sesame</label>
+                        </div>
+
+                        <!-- HERE IS A CUSTOM INPUT -> THERE IS 2 TYPES -> 'tagContents' is just to display the tags (visual) -> hiddenTagContents is for the table-->
+                        <div class="textInput">
+                            <div class="inputWButton">
+                                <input type="text" class="textField tagInput" placeholder="Enter other options"> <button type="button" class="ADD">Add</button>
+                            </div>
+                            <div class="tagContents"> <p class="tagBoxText">No Allergies Added </p></div>
+                            <input type="hidden" name="otherAllergies" class="hiddenTagContents">
+                        </div>
+                        
+                    </div>
+
+                    <div class="textInput">
+                        <label for="comments">Any Comments</label>
+                        <textarea type="textarea" class="textField" name="comments" value="" placeholder="Anything else you wanted to mention?"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit">
+
+
+                </form>
+
+            </div>
+
+            
+
+
+        </section>
+        
+    </body>
+</html>
