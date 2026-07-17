@@ -1,6 +1,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +20,15 @@ h1 {
   text-align: center;
 }
 
+nav {
+  background-color: #ffffff;
+  padding: 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-bottom: solid 1px rgb(202, 202, 202);
+  width: 100%;
+}
 nav ul {
   margin: 0;
   padding: 20px;
@@ -38,6 +48,9 @@ form {
   max-width: 800px;
   background-color: rgba(209, 209, 209, 0.3019607843);
   padding: 20px;
+  border-radius: 12px;
+  border: solid 1px #d4d4d4;
+  box-shadow: 0px 0px 5px rgb(202, 202, 202);
 }
 form button {
   cursor: pointer;
@@ -49,7 +62,15 @@ form label {
   font-size: 16px;
   font-weight: 600;
 }
+form input {
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: solid 1px black;
+  background-color: #dddddd;
+}
 form input[type=submit] {
+  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   cursor: auto;
@@ -69,13 +90,6 @@ form input[type=radio] {
 form input[type=checkbox] {
   width: 12px;
   cursor: pointer;
-}
-form input {
-  font-size: 14px;
-  padding: 8px 12px;
-  border: none;
-  border-bottom: solid 1px black;
-  background-color: #dddddd;
 }
 form input:hover {
   background-color: #b4b4b4;
@@ -134,10 +148,11 @@ form .tagContents {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0px 12px;
+  padding: 8px 12px;
   gap: 4px;
   background-color: #dddddd;
-  clip-path: border-box;
+  -webkit-clip-path: border-box;
+          clip-path: border-box;
 }
 form .tagContents .tagBoxText {
   position: absolute;
@@ -148,11 +163,12 @@ form .tagContents:hover {
   background-color: #ffffff;
 }
 form .tagContents:hover .tagBoxText {
-  bottom: 10px;
+  bottom: 18px;
   transition-duration: 0.4s;
 }
 form .tagContents .tag {
   white-space: nowrap;
+  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   padding: 4px 8px;
@@ -195,4 +211,5 @@ form .tagContents button:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-}/*# sourceMappingURL=Styling.css.map */
+}
+/*# sourceMappingURL=Styling.css.map */
