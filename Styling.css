@@ -44,7 +44,9 @@ a {
   color: black;
   -webkit-text-decoration: underline 0.1px rgba(0, 0, 0, 0);
           text-decoration: underline 0.1px rgba(0, 0, 0, 0);
+  transition: -webkit-text-decoration-color 300ms;
   transition: text-decoration-color 300ms;
+  transition: text-decoration-color 300ms, -webkit-text-decoration-color 300ms;
 }
 a:hover {
   -webkit-text-decoration: underline 2px rgba(0, 0, 0, 0.5607843137);
@@ -123,6 +125,7 @@ a:active {
   background-color: #23262E;
   color: #ffffff;
   padding: 12px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   border-bottom: solid 1px #020202;
@@ -170,11 +173,13 @@ footer ul {
 }
 footer ul li {
   color: #ffffff;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 4px 20px;
 }
 footer ul li a {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #ffffff;
@@ -209,7 +214,15 @@ form label {
   font-size: 16px;
   font-weight: 600;
 }
+form input {
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: solid 1px black;
+  background-color: #dddddd;
+}
 form input[type=submit] {
+  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   cursor: auto;
@@ -229,13 +242,6 @@ form input[type=radio] {
 form input[type=checkbox] {
   width: 12px;
   cursor: pointer;
-}
-form input {
-  font-size: 14px;
-  padding: 8px 12px;
-  border: none;
-  border-bottom: solid 1px black;
-  background-color: #dddddd;
 }
 form input:hover {
   background-color: #b4b4b4;
@@ -297,7 +303,8 @@ form .tagContents {
   padding: 8px 12px;
   gap: 4px;
   background-color: #dddddd;
-  clip-path: border-box;
+  -webkit-clip-path: border-box;
+          clip-path: border-box;
 }
 form .tagContents .tagBoxText {
   position: absolute;
@@ -313,6 +320,7 @@ form .tagContents:hover .tagBoxText {
 }
 form .tagContents .tag {
   white-space: nowrap;
+  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   padding: 4px 8px;
@@ -383,4 +391,5 @@ form .tagContents button:hover {
 
 img {
   border-radius: 8px;
-}/*# sourceMappingURL=Styling.css.map */
+}
+/*# sourceMappingURL=Styling.css.map */
