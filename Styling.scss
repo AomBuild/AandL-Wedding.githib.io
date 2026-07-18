@@ -4,6 +4,8 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
 
+    background-color: #f3f3f3;
+
     position: relative;
     
     display: flex;
@@ -27,7 +29,28 @@ h1 {
 
     margin: 0;
     text-align: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+h2 {
+
+    margin: 0;
+    text-align: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h3 {
+
+    margin: 0;
+    text-align: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
 
 .vh {
 
@@ -63,8 +86,7 @@ a {
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
+    
     align-items: center;
 }
 
@@ -72,8 +94,23 @@ a {
 
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    
+    justify-content: center;
+}
 
+.columnFlexReverse {
+
+    display: flex;
+    flex-direction: column-reverse;
+    
+    align-items: center;
+}
+
+.rowFlexReverse {
+
+    display: flex;
+    flex-direction: row-reverse;
+    
     justify-content: center;
 }
 
@@ -92,20 +129,63 @@ a {
     align-items:center;
 }
 
+.borderBox {
+
+    box-sizing: border-box;
+}
+
+.paddingWidth20 {
+
+    padding: 0 20px;
+}
+
+.gap4 {
+
+    gap:4px
+}
+
+.gap12 {
+
+    gap:12px
+}
+
+.gap20 {
+
+    gap: 20px;
+}
+
+.gap40 {
+
+    gap: 40px;
+}
+
+.gap60 {
+
+    gap: 60px;
+}
+
+
 
 
 .navbar {
 
-    background-color: #ffffff;
+    background-color: #23262E;
+    color: #ffffff;
+
     padding: 12px;
     position: sticky;
     top: 0px;
 
-    border-bottom: solid 1px #cacaca;
+    border-bottom: solid 1px #020202;
 
     box-sizing: border-box;
+    box-shadow: 0px 2px 5px #0f0f0f;
+
     width: 100%;
 
+    z-index: 100;
+
+    
 
     ul {
 
@@ -120,8 +200,67 @@ a {
         gap: 20px;
 
         list-style: none;
+
+        li {
+
+            a {
+
+                color: #ffffff;
+            }
+        }
         
     }
+}
+
+button {
+
+    padding: 8px 12px;
+    background-color: #d8d8d8;
+    color: #23262E;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 40px;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    padding: 20px 100px;
+
+    background-color: #23262E;
+    color: #ffffff;
+
+    h2 {
+
+        text-align: center;
+    }
+
+    ul {
+
+        list-style: none;
+        
+        li {
+        
+            color: #ffffff;
+            width: fit-content;
+            padding: 4px 20px;
+
+            a {
+                width: fit-content;
+                color: #ffffff;
+            }
+        }
+
+    }
+    
+
+    
+
 }
 
 .formStyling {
@@ -394,12 +533,13 @@ form {
 
         text-align: center;
     }
+
+    p {
+
+        text-align: center;
+    }
 }
 
-.gapV1 {
-
-    gap: 12px;
-}
 
 .underline {
 
@@ -419,12 +559,26 @@ form {
 
     background-color: #000000af;
     padding: 40px 80px;
-    margin: 40px;
 
+    max-width: 800px;
+
+    width: 80%;
+    
     border: solid 1px black;
     border-radius: 12px;
     box-sizing: border-box;
     box-shadow: 0px 0px 5px rgb(202, 202, 202);
 
     color: #ffffff;
+}
+
+.paragraphText {
+
+    max-width: 600px;
+    width: 80%
+}
+
+img {
+
+    border-radius: 8px;
 }
