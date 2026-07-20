@@ -14,24 +14,28 @@ body section {
 
 p {
   margin: 0;
+  line-height: 1.5;
   text-align: center;
 }
 
 h1 {
   margin: 0;
   text-align: center;
+  line-height: 1.5;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 h2 {
   margin: 0;
   text-align: center;
+  line-height: 1.5;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 h3 {
   margin: 0;
   text-align: center;
+  line-height: 1.5;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -357,11 +361,6 @@ form .tagContents button:hover {
   padding-bottom: 8px;
   border-bottom: solid 1px #cacaca;
   width: 160px;
-  transition: 0.2s;
-}
-.underline:hover {
-  width: 400px;
-  transition: 0.2s;
 }
 
 .bgHeading {
