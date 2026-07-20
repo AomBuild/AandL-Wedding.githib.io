@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
             <div style="display:flex; flex-direction:column; gap:12px;" alt="footer Info">
                 <h2>Laura & Alessandro</h2>
-                <p>24 - 03 - 2027 </p>
+                <p>24 March 2027 </p>
             </div>
 
             

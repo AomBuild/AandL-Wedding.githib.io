@@ -1,13 +1,10 @@
-
-
-
 const accommodationCat = [
     {
         id: 1,
         image: 'Images/',
         heading: 'placeholder',
         paragraph: 'placeholder',
-        cost: '',
+        cost: '$$',
         link: '',
 
     },
@@ -16,15 +13,30 @@ const accommodationCat = [
 
 ]
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
-    const accomCat = document.querySelectorAll("accommodationCatalogue");
+    
 
-    accomCat.forEach(accommodation => {
+    const accomCat = document.querySelector(".accommodationCatalogue");
 
-        accommodation.innerHTML +=  
-        `
-            <p> test</p>
+    accommodationCat.forEach(accommodation => {
+
+        accomCat.innerHTML +=  
+        `   
+            <div>
+                <img src="${accommodation.image}">
+                <h2> ${accommodation.heading}</h2>
+                <p>${accommodation.paragraph}</p>
+
+                <div>
+                    <p>${accommodation.cost}</p>
+                    <button onclick="window.open('${accommodation.link}', 'blank')"> View Here </buttonp>
+                </div>
+            
+            
+            </div>
+            
         `
     });
 })
