@@ -151,8 +151,44 @@ a:active {
 
 button {
   padding: 8px 12px;
-  background-color: #d8d8d8;
-  color: #23262E;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgb(202, 202, 202);
+  transition: 0.2s;
+}
+
+.primary {
+  background-color: #1b2125;
+  color: #f2f4f7;
+  border: solid 1px #a8a8a8;
+}
+.primary:hover {
+  background-color: #888892;
+  color: #f2f4f7;
+  transition: 0.2s;
+}
+.primary:active {
+  scale: 0.95;
+  background-color: #1b2125;
+  color: #f2f4f7;
+  transition: 0.2s;
+}
+
+.secondary {
+  background-color: #e0e2e4;
+  color: #141618;
+  border: solid 1px #a8a8a8;
+}
+.secondary:hover {
+  background-color: #a5adb3;
+  color: #141618;
+  transition: 0.2s;
+}
+.secondary:active {
+  scale: 0.95;
+  background-color: #898f96;
+  color: #161616;
+  transition: 0.2s;
 }
 
 footer {
@@ -386,4 +422,40 @@ form .tagContents button:hover {
 
 img {
   border-radius: 8px;
+}
+
+.accomCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 400px;
+  min-width: 320px;
+  width: 80%;
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 1px #cacaca;
+  translate: 0px 0px;
+  transition-duration: 0.1s;
+}
+.accomCard:hover {
+  translate: 0px -12px;
+  transition-duration: 0.2s;
+}
+.accomCard:hover img {
+  opacity: 0.4;
+  transition-duration: 0.2s;
+}
+
+.accommodationCatalogue {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 60px;
+  width: 100%;
 }/*# sourceMappingURL=Styling.css.map */

@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
 
-        tagButton.addEventListener("click", addTag);
+        tagButton.addEventListener("click", addTag); 
 
         tagInput.addEventListener("keydown", (event) => {
 
