@@ -615,11 +615,18 @@ form {
     }
 }
 
+.marginBox {
+
+    box-sizing: border-box;
+    margin: 0 20px;
+
+}
+
 
 .underline {
 
     padding-bottom: 8px;
-    border-bottom: solid 1px #cacaca ;
+    border-bottom: solid 1px #161616 ;
     width: 160px;
     
 }
@@ -665,7 +672,7 @@ img {
     align-items: center;
 
     gap: 12px;
-
+    
     max-width: 400px;
     min-width: 320px;
     width: 80%;
