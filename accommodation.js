@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <div class="underline"></div>
 
-                <div style="display:flex; flex-direction:row; gap:12px; align-items: center; justify-content:space-between; width: 100%; padding: 0px 20px 16px; box-sizing: border-box; ">
+                <div style="display:flex; flex-direction:row; gap:12px; align-items: center; justify-content:space-between; width: 100%; padding: 0px 20px 12px; box-sizing: border-box; ">
                     <button class="secondary" style="width:100%;" onclick="window.open('${accommodation.map}', 'blank')"> View Maps </button>
                     <button class="primary" style="width:100%;" onclick="window.open('${accommodation.link}', 'blank')"> Book Here </button>
                 </div>
