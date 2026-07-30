@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     & <br>
                     ALESSANDRO
                 </h1>
+                <p>Join us for our Wedding Celebration</p>
                 
             </div>
     

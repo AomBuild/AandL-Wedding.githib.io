@@ -39,6 +39,30 @@ h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.Bolden {
+  font-weight: 700;
+}
+
+.Wavy {
+  font-style: italic;
+}
+
+.line {
+  text-decoration: underline;
+}
+
+.hyperlink {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+.hyperlink:hover {
+  font-weight: 800;
+}
+.hyperlink:active {
+  font-weight: 700;
+}
+
 .vh {
   height: 100vh;
 }
