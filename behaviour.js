@@ -37,8 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     & <br>
                     ALESSANDRO
                 </h1>
-                <br>
-                <p> 24 March 2027</p>
+                
             </div>
     
         `
@@ -53,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
             <div style="display:flex; flex-direction:column; gap:12px;" alt="footer Info">
                 <h2>Laura & Alessandro</h2>
-                <p>24 March 2027 </p>
+                
             </div>
 
             
