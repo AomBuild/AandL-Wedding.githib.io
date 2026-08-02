@@ -30,7 +30,7 @@ const accommodationCat = [
         id: 3,
         image: 'Images/yarraglen.png',
         heading: 'Yarra Valley grand Hotel',
-        paragraph: '2nd cloesest to the reception venue, in the center of yarra glen too so plenty of cafe and restaurants with only a short distance to travel. ',
+        paragraph: '2nd closest to the reception venue, in the center of yarra glen too so plenty of cafe and restaurants with only a short distance to travel. ',
         map: 'https://maps.app.goo.gl/q1yEk2MRDjAN7Twd7',
         link: 'https://yarravalleygrand.com.au/',
 

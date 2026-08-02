@@ -44,8 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
         menuButton.addEventListener("click", () => {
             nav.classList.toggle("responsive");
         });
+
     });
 
+    
     
 
     
