@@ -5,6 +5,7 @@
 //NAVBAR & HEADER ELEMENT
 
 document.addEventListener("DOMContentLoaded", () => {
+    
 
     const navbar = document.querySelectorAll(".navbar");
 
@@ -12,18 +13,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
         navigation.innerHTML += 
         `
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         
-            <nav>
+            <nav class="topNav">
                 <ul>
-                    <li><a href="index.html">Welcome</a></li>
-                    <li><a href="schedule.html">On The Day</a></li>
-                    <li> <a href="accommodation.html">Accommodation</a></li>
-                    <li> <a href="rsvp.html">RSVP</a> </li>
+
+                    <li class="icon">
+                        <a class="hyperlink">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="links"><a href="index.html">Welcome</a></li>
+                    <li class="links"><a href="schedule.html">On The Day</a></li>
+                    <li class="links"> <a href="accommodation.html">Accommodation</a></li>
+                    <li class="links"> <a href="rsvp.html">RSVP</a> </li>
+
+                    
+                    
                 </ul>
             </nav>
     
-        `
+        `;
+
+        const nav = navigation.querySelector(".topNav");
+        const menuButton = navigation.querySelector(".icon");
+
+        menuButton.addEventListener("click", () => {
+            nav.classList.toggle("responsive");
+        });
     });
+
+    
+
+    
 
     const header = document.querySelectorAll(".header");
 
@@ -61,6 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
         `
     });
+
+    
 
 
     /*

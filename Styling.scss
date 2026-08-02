@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Sen:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Kapakana:wght@300..400&family=Sen:wght@400..800&display=swap');
 
+
+
 body {
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -107,7 +109,8 @@ h3 {
 
 .vh {
 
-    height: 100vh;
+    height: auto;
+    padding: 100px 0;
 }
 
 a {
@@ -218,6 +221,8 @@ a {
 }
 
 
+/* Hide the link that should open and close the topnav on small screens */
+
 
 
 .navbar {
@@ -240,7 +245,48 @@ a {
 
     
 
+    .icon {
+
+        display: none;
+    }
+
+    @media screen and (max-width: 460px) {
+
+        
+
+
+        .links {
+            display: none;
+        }
+
+        .icon {
+            display: block;
+            margin-left: auto;
+        }
+
+        .topNav.responsive {
+
+            ul {
+
+                display: flex;
+                flex-direction: column;
+
+                transition-duration: .2s ease;
+            }
+
+            .links {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+
+    
+
+
     ul {
+
+        transition-duration: .2s ease;
 
         margin: 0;
         padding: 20px;
@@ -259,6 +305,13 @@ a {
             a {
 
                 color: #ffffff;
+
+                &:active {
+
+                    background-color: #ffffff;
+                    color: #141618;
+                    
+                }
             }
         }
         

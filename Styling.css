@@ -67,7 +67,8 @@ h3 {
 }
 
 .vh {
-  height: 100vh;
+  height: auto;
+  padding: 100px 0;
 }
 
 a {
@@ -150,6 +151,7 @@ a:active {
   gap: 60px;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
 .navbar {
   background-color: #23262E;
   color: #ffffff;
@@ -162,7 +164,29 @@ a:active {
   width: 100%;
   z-index: 100;
 }
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 460px) {
+  .navbar .links {
+    display: none;
+  }
+  .navbar .icon {
+    display: block;
+    margin-left: auto;
+  }
+  .navbar .topNav.responsive ul {
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.2s ease;
+  }
+  .navbar .topNav.responsive .links {
+    display: block;
+    margin-left: auto;
+  }
+}
 .navbar ul {
+  transition-duration: 0.2s ease;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -174,6 +198,10 @@ a:active {
 }
 .navbar ul li a {
   color: #ffffff;
+}
+.navbar ul li a:active {
+  background-color: #ffffff;
+  color: #141618;
 }
 
 button {
