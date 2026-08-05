@@ -3,7 +3,7 @@ const accommodationCat = [
         id: 1,
         image: 'Images/Balgownie/balgownie-estate-yarra-valley_171748569914.jpg',
         heading: 'Balgownie Estate',
-        paragraph: 'This accommodation is next to the reception, it is also where the bridal party will be staying.  <br> Use <span style="font-weight: 600;cursor">L&AWEDDINGMAR27</span> for 10% off booking.',
+        paragraph: 'Book a room next to where the reception is held, the bridal party will also be staying here. <br> <br> Use <span style="font-weight: 600;">L&AWEDDINGMAR27</span> for 10% off booking.',
         map: 'https://maps.app.goo.gl/DjGwT7h53MoMYUt77',
         link: 'https://app.mews.com/distributor/93470a07-76a8-4b32-bde8-b2ad017e18f4',
 
@@ -12,7 +12,7 @@ const accommodationCat = [
         id: 2,
         image: 'Images/Healesville inn.png',
         heading: 'Healeville Hotel',
-        paragraph: 'Located in Healesville, near a lot of nice cafe and restaurants, located in the middle of the town.',
+        paragraph: 'Located in the heart of Healesville, next to plenty of cafe and restaurants. <br> <br> 15 minute drive to Balgownie Estate. ',
         map: 'https://maps.app.goo.gl/6B1jNBXKbNqEiHpe7',
         link: 'https://www.healesvillehotel.com/',
 
@@ -21,7 +21,7 @@ const accommodationCat = [
         id: 3,
         image: 'Images/TuckInn.png',
         heading: 'Tuck Inn',
-        paragraph: 'Still in the town, though sligthly away from the main road, we have stayed here during one of our anniversaries to enjoy the country town. ',
+        paragraph: 'Located in Healsville too, we have stayed here during one of our anniversaries. <br> <br> Also 15 minute drive to Balgownie Estate.',
         map: 'https://maps.app.goo.gl/4sAkSJTM34Wudzyc8',
         link: 'https://www.tuckinn.com.au/',
 
@@ -30,7 +30,7 @@ const accommodationCat = [
         id: 3,
         image: 'Images/yarraglen.png',
         heading: 'Yarra Valley grand Hotel',
-        paragraph: '2nd closest to the reception venue, in the center of yarra glen too so plenty of cafe and restaurants with only a short distance to travel. ',
+        paragraph: '2nd closest to the reception venue, in the center of yarra glen too so plenty of cafe and restaurants. <br> <br> 6 minute drive to Balgownie Estate. ',
         map: 'https://maps.app.goo.gl/q1yEk2MRDjAN7Twd7',
         link: 'https://yarravalleygrand.com.au/',
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <div style="padding: 4px 20px;">
                     <h2> ${accommodation.heading}</h2>
-                    <p style="height: 80px; overflow: auto;">${accommodation.paragraph}</p>
+                    <p style="height: 100px; overflow: auto;">${accommodation.paragraph}</p>
                 </div>
 
                 <div class="underline"></div>
